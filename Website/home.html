@@ -1,73 +1,135 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=devive-width, initial-scale=1.0">
-        <title>LOGIC TECH</title>
-        
-        <style>
- body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Portfolio Landing Page</title>
+  <style>
+    :root {
+      --primary: #2d3436;
+      --secondary: #00b894;
+      --accent: #0984e3;
+      --background: #f5f6fa;
+      --card: #ffffff;<style>
+    :root {
+      --primary: #2d3436;
+      --secondary: #00b894;
+      --accent: #0984e3;
+      --background: url('path/to/your/tech-image.jpg') no-repeat center center fixed; /* Updated background */
+      --card: #ffffff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background);
+      background-size: cover; /* Ensure the background covers the entire area */
+      color: var(--primary);
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+    }
+    /* ...existing code... */  gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 2em 1em;
+    .team-member {
+      background: var(--card);
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      padding: 2rem;
       text-align: center;
-    }
-     h1 {
-      color: #2c3e50;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 0.5em;
+      transition: transform 0.3s ease;
     }
 
-    p {
-      line-height: 1.6;
-      margin: 1em 0;
+    .team-member:hover {
+      transform: translateY(-10px);
     }
- 
-    .section {
-      margin-top: 2em;
+
+    .member-name {
+      color: var(--accent);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
     }
-    
+
+    .member-role {
+      color: var(--secondary);
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .github-link {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .github-link:hover {
+      background: var(--secondary);
+    }
 
     footer {
+      background: var(--primary);
+      color: white;
       text-align: center;
-      padding: 2em 1em;
-      background-color: #ecf0f1;
-      color: #777;
-      margin-top: 3em;
+      padding: 1.5rem;
+      margin-top: 3rem;
     }
-    </style>
-    </head>
-    <body>
-        <header></header>
-        <h1> Pulse Tech  </h1>
-        <nav>
-    
-    <a href="about us.html">about us</a>
-    <a href="contact.html">contact </a>
-    <a href="Home.html">Home</a>
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Amazing Team</h1>
+    <p>Building the future together</p>
+  </header>
 
-         </nav>
- <header>
-    
-  <section class="intro">
-    <h1>Overview</h1>
-    <p>
-        This website was developed as part of our web development group project.
-        it showcases our teamwork,creativity and technical skills.
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    </p>
-    </section>
-     
-    <footer>
-        <p>@2025 Group web project. All rights observed.</p>
-    </footer>
+  <div class="team-grid">
+    <div class="team-member">
+      <h2 class="member-name">Innocent Kabwe</h2>
+      <p class="member-id">ID: 2410109</p>
+      <p class="member-role">Web Designer</p>
+      <p>Specializing in modern web technologies and cloud architecture. Passionate about building scalable solutions and mentoring junior developers.</p>
+      <a href="https://github.com/innocent-kabwe" class="github-link">GitHub Profile</a>
+    </div>
+
+    <div class="team-member">
+      <h2 class="member-name">Kelvin Mumba</h2>
+      <p class="member-id">ID: 2300294</p>
+      <p class="member-role">Backend Developer</p>
+      <p>Focused on database design, APIs, and server-side logic.</p>
+      <a href="https://github.com/kelvin-mumba" class="github-link">GitHub Profile</a>
+    </div>
+
+    <div class="team-member">
+      <h2 class="member-name">Sibongile Tembo</h2>
+      <p class="member-id">ID: 2410291</p>
+      <p class="member-role">Project Manager</p>
+      <p>Leading the team with strategic planning and coordination.</p>
+      <a href="https://github.com/sibongile-tembo" class="github-link">GitHub Profile</a>
+    </div>
+
+    <div class="team-member">
+      <h2 class="member-name">Katola Sinkala</h2>
+      <p class="member-id">ID: 2410683</p>
+      <p class="member-role">Front-End Developer</p>
+      <p>Crafting beautiful and interactive user interfaces.</p>
+      <a href="https://github.com/katola-sinkala" class="github-link">GitHub Profile</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Team Project | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
